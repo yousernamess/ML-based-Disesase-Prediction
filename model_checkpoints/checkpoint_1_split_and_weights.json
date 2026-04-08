@@ -1,0 +1,9 @@
+{
+  "rows_total": 189647,
+  "rows_eval": 189601,
+  "classes_total": 773,
+  "classes_eval": 727,
+  "common_classes_count": 31,
+  "train_rows": 151680,
+  "test_rows": 37921
+}

@@ -1,0 +1,5 @@
+{
+  "training_rows_after_augmentation": 303360,
+  "model_path": "model_checkpoints/common_first_model_v2.pt",
+  "epochs": 40
+}
