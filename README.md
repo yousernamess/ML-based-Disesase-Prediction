@@ -18,7 +18,35 @@ This project explores a symptom-to-disease dataset, trains a common-first diseas
 - `test_common_model_v2.py` tests the v2 model bundle.
 - `streamlit_dashboard.py` launches the interactive UI.
 
+## How to Import DATASET
+
+1. Put `sympdis_clean_basic.csv` in the project root (same folder as `common_first_predictor.py`).
+2. Keep the filename exactly as `sympdis_clean_basic.csv`.
+3. Confirm the file exists before training.
+
+Expected structure in the root folder:
+
+```text
+Symptom to Disease/
+	common_first_predictor.py
+	streamlit_dashboard.py
+	test_common_model_v2.py
+	sympdis_clean_basic.csv
+```
+
+Optional quick check:
+
+```bash
+python -c "import os; print(os.path.exists('sympdis_clean_basic.csv'))"
+```
+
 ## Run the project
+
+Install dependencies first:
+
+```bash
+pip install numpy pandas scikit-learn torch streamlit joblib
+```
 
 Train the model:
 
@@ -37,6 +65,11 @@ Launch the Streamlit dashboard:
 ```bash
 streamlit run streamlit_dashboard.py
 ```
+
+The dashboard uses:
+
+- Model path: `model_checkpoints/common_first_model_v2.pt` (or your selected model file)
+- Cleaned data path: `sympdis_clean_basic.csv`
 
 ## Notes
 
